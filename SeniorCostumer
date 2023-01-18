@@ -1,0 +1,15 @@
+class SeniorCustomer extends Customer{
+	private double discount = 0.20;
+	// costructor of the subclass RegularCustomer
+	public SeniorCustomer(String name, int amount){	
+		super(name, amount); // calling the costructor of the superclass via "super" to be used by subclass
+	}
+
+	@Override
+	public double calculateBill(){
+		// TODO: Implement this method
+		amount=amount-(amount*discount);
+		return amount;
+	}
+
+}
