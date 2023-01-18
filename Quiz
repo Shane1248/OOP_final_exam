@@ -1,0 +1,28 @@
+class Quiz{
+	private int StudentID;
+        private double totalscore = 0.20;
+	private double maxscore;
+	private double grade;
+	
+	public Quiz(int StudentID, double totalscore, double maxscore){	
+		this.StudentID=StudentID;
+                this.totalscore=totalscore; 
+		this.maxscore=maxscore;	
+	}
+	
+	public int getID(){
+		return StudentID;
+	}
+
+	public void setID(int StudentID){
+		this.StudentID=StudentID;
+	}
+
+	public double calculategrade()
+	{
+		// TODO: Implement this method
+		grade=(totalscore/maxscore)*100;
+		return grade;
+	}
+
+}
